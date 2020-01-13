@@ -3,11 +3,22 @@ body {
     padding: 0;
     background-color: #F9F9F9;
 }
-    
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+} 
+
+/*-----------------------NavBar-----------------------*/
 nav {
     height: 56px;
     width: 100%;
     position: fixed;
+    top: 0;
     display: flex;
     flex: row wrap;
     justify-content: space-between;
@@ -81,7 +92,6 @@ button {
     border-radius: 3px;
     color: blue;
     background-color: white;
-    width: 100px;
 }
 
 aside{
@@ -119,6 +129,114 @@ img{
 
 
 }
+/*-----------------------MainVideo-----------------------*/
+
+#main-video {
+    margin-top: 30px;
+    grid-column: 1 / 2;
+}
+
+
+.fa-user-circle {
+    margin-right: 15px;
+    width: 15px;
+}
+.search-bar {
+    margin: 0;
+    padding: 0;
+}
+
+.icon{
+    width: 16px;
+}
+
+.container {
+    display: flex;
+    flex: row wrap;
+    align-items: center;
+    padding: 50px;
+}
+
+.left-menu {
+    justify-content: left;
+}
+
+.center-menu {
+    justify-self: center;
+}
+
+#video {
+    padding-left: 5%;
+    padding-top: 5%;
+}
+
+.video {
+    width: 100%;
+    height: 420px;
+}
+
+.photo {
+    height: 45px; 
+    width: 180px;
+}
+
+.text {
+    padding-left: 5%;
+    padding-top: 20px;
+}
+
+.video-title {
+    font-size: 19px;
+    color: black;
+    padding-bottom: 10px; 
+}
+
+.one-line {
+    display: inline-block;
+    color: gray;
+
+}
+
+.text-bar {
+    padding-left: 5%;
+}
+
+.thumbs-up {
+    padding-left: 27%;
+}
+
+.icons {
+    padding-left: 20px;
+}
+
+.subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3% 0 3% 0;
+    
+
+}
+
+.t-series-logo {
+    padding-left: 5%;
+}
+
+.subscribers-text {
+    padding-left: 2%;
+}
+
+.subscribe-logo {
+   padding-left: 50%; 
+}
+
+
+.bell {
+    padding-left: 0.5%;
+    padding-bottom: 0%;
+}
+
+
 
 small{
     color:gray;
