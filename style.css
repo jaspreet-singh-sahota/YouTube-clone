@@ -13,6 +13,60 @@ body {
     font-size: 16px;
 } 
 
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: 65vw 35vw;
+}
+
+#main-video {
+    grid-area: video-section;
+}
+
 /*-----------------------NavBar-----------------------*/
 nav {
     height: 56px;
@@ -53,7 +107,7 @@ button {
 #search-button {
     border-radius: 0 2px 2px 0;
     border: 1px solid #CCCCCC;
-    height: 34px;
+    height: 32px;
     width: 65px;
     background-color: #F9F9F9;
     display: flex;
@@ -96,7 +150,10 @@ button {
 /*------------Aside-Bar---------------*/
 
 aside{
-    padding-top: 200px;
+    padding-top: 100px;
+    margin: 56px 30px 35px 35px;  
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
 
 }
 
@@ -135,6 +192,7 @@ img{
 #main-video {
     margin-top: 30px;
     grid-column: 1 / 2;
+    grid-row: 1/2;
 }
 
 
@@ -164,6 +222,10 @@ img{
 
 .center-menu {
     justify-self: center;
+}
+
+#subscribe {
+    margin-left: 3.5%;
 }
 
 #video {
@@ -219,9 +281,10 @@ img{
 
 }
 
-.t-series-logo {
+.t-series-logo img{
     padding-left: 5%;
-    height: 50px;
+    width: 40px;
+    height:50px;
 }
 
 .subscribers-text {
@@ -245,6 +308,9 @@ small{
 }
 
 /*----------Comments-Section*------------*/
+#comment-section{
+    margin-top: -1050px;
+}
 
 .show-more {
     padding-top: 3%;
@@ -350,4 +416,63 @@ input:checked + .slider:before {
 .show-more {
     padding-top: 3%;
     color: grey;
+}
+
+/*-------------footer-----------------*/
+
+#comment-section {
+    grid-column: 1 / 2;
+    padding-bottom: 0px;
+}
+
+#footer {
+    height: 170px;
+    width: 100%;
+    margin-top: 50px;
+    background-color: white;
+    bottom: 0;
+}
+
+.footer-links {
+    margin: 10px 30px;
+    display: flex;
+    flex: row wrap;
+    align-items: center;
+}
+
+.footer-links a {
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+#links-0 {
+    padding: 20px 0 15px 0;
+    margin-right: 10px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+#links-0 i {
+    margin-right: 3px;
+}
+
+.footer-button {
+    color: black;
+    font-size: 12px;
+    background-color: #F9F9F9;
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 2px;
+    border: 1px solid #CCCCCC;
+}
+
+#links-1 a {
+    margin-top: 15px;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#links-2 a {
+    color: gray;
+    font-size: 13px;
 }
