@@ -150,7 +150,7 @@ button {
 /*------------Aside-Bar---------------*/
 
 aside{
-    padding-top: 100px;
+    padding-top: 30px;
     margin: 56px 30px 35px 35px;  
     grid-column: 2 / 3;
     grid-row: 1 / 2;
@@ -309,7 +309,7 @@ small{
 
 /*----------Comments-Section*------------*/
 #comment-section{
-    margin-top: -1050px;
+    margin-top: -900px;
 }
 
 .show-more {
@@ -475,4 +475,8 @@ input:checked + .slider:before {
 #links-2 a {
     color: gray;
     font-size: 13px;
+}
+
+.video {
+    height: 500px;
 }
